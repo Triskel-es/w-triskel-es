@@ -17,7 +17,7 @@
 </div>
 <br/>
 
-# Odyssey Theme
+# Triskel
 
 Odyssey Theme is a modern theme/starter for a business or startup's marketing website. It provides landing page examples, a full-featured blog, contact forms, and more. It is fully themeable to match your business' branding and style. It even includes a theme switcher component to show how easily the entire style of the site can be changed with only a few lines of CSS.
 
@@ -26,7 +26,6 @@ Odyssey Theme is a modern theme/starter for a business or startup's marketing we
 <p align="center">
   <img src="assets/lh-screenshot.png" alt="Screenshot of perfect score in Lighthouse benchmark">
 </p>
-
 
 - ✅ **A perfect score in Lighthouse**
 - ✅ **Blazing fast performance thanks to Astro 🚀**
@@ -37,7 +36,6 @@ Odyssey Theme is a modern theme/starter for a business or startup's marketing we
 - ✅ **Performant Local Fonts Setup**
 - ✅ **Contact Forms Setup for Netlify, Formspree, Formspark, etc.**
 - ✅ **A package of ready-to-use UI components**
-
 
 ## Demo
 
@@ -50,7 +48,7 @@ View a [live demo](https://odyssey-theme.littlesticks.site/) of the Odyssey Them
 
 ## Usage
 
-### Remote IDEs 
+### Remote IDEs
 
 <p>
   <a href="https://stackblitz.com/github/littlesticksdev/odyssey-theme/tree/main/theme">
