@@ -2,6 +2,9 @@
 import settings from '../../config/settings.js';
 import ThemeProvider from '../theme-switcher/ThemeProvider.astro';
 
+import i18next, { t } from 'i18next';
+import { Trans, HeadHrefLangs } from 'astro-i18next/components';
+
 import '../../styles/index.css';
 
 export interface Props {
@@ -22,23 +25,24 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" type="image/png" href="/favicon.png" />
 <!-- Primary Meta Tags -->
-<title>{title}</title>
-<meta name="title" content={title} />
-<meta name="description" content={description} />
+<!-- <title>{title}</title> -->
+<title>{t("site.title")}</title>
+<meta name="title" content={t("site.title")} />
+<meta name="description" content={t("site.description")} />
 <link rel="canonical" href={canonicalURL} />
 <!-- Generator -->
 <meta name="generator" content={Astro.generator} />
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonicalURL} />
-<meta property="og:title" content={title} />
+<!-- <meta property="og:title" content={title} /> -->
 <meta property="og:description" content={description} />
 <meta property="og:image" content={image} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={canonicalURL} />
-<meta property="twitter:title" content={title} />
+<!-- <meta property="twitter:title" content={title} /> -->
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={image} />
 

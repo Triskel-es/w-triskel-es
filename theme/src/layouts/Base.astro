@@ -3,6 +3,9 @@ import { SkipLink } from '@littlesticks/odyssey-theme-components';
 import BaseHead from '../components/head/BaseHead.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 
+import i18next, { t } from 'i18next';
+import { Trans, HeadHrefLangs } from 'astro-i18next/components';
+
 export interface Props {
 	seo?: BaseHeadProps;
 }
@@ -10,13 +13,13 @@ export interface Props {
 const { seo } = Astro.props;
 ---
 
-<html lang="en">
+<html lang={i18next.language}>
 	<head>
 		<BaseHead {...seo} />
 	</head>
 	<body>
 		<SkipLink />
-    <slot name="announcement-bar" />
+		<slot name="announcement-bar" />
 		<slot name="header" />
 		<main id="content">
 			<slot />
