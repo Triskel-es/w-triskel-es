@@ -5,22 +5,20 @@ import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 import Logo from '../components/Logo.astro';
 import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
+import { nav } from '../config/nav.js';
 
 export interface Props {
 	seo?: BaseHeadProps;
 }
 
-import { nav } from '../config/nav.js';
-
 const { seo } = Astro.props as Props;
 ---
 
 <Layout {seo}>
-	<Header rightMenu navData={nav} slot="header">
+	<Header leftMenu navData={nav} slot="header">
 		<div slot="logo">
 			<Logo />
 		</div>
-
 		<Button slot="action-item" href="/theme/get-started">Get Started</Button> -->
 	</Header>
 	<div id="page">
