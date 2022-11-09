@@ -6,6 +6,7 @@ import Logo from '../components/Logo.astro';
 import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
 import { nav } from '../config/nav.js';
+import { LanguageSelector } from 'astro-i18next/components';
 
 export interface Props {
 	seo?: BaseHeadProps;
@@ -21,6 +22,7 @@ const { seo } = Astro.props as Props;
 		</div>
 		<Button slot="action-item" href="/theme/get-started">go!</Button> -->
 	</Header>
+	<LanguageSelector showFlag={false} class="my-select-class" />
 	<div id="page">
 		<slot />
 	</div>
@@ -36,3 +38,10 @@ const { seo } = Astro.props as Props;
 		<Logo slot="logo" />
 	</Footer>
 </Layout>
+
+<style>
+	.my-select-class {
+		font-size: large;
+		margin-left: 50em;
+	}
+</style>

@@ -6,5 +6,9 @@
 	"home": {
 		"title": "Welcome to my awesome website!",
 		"subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!"
+	},
+	"homehero": {
+		"title": "Welcome to Triskel!",
+		"subtitle": "esta es una traduccion <0>mas complicada</0> mezclada con <1>elementos html</1> como links <2>triskel-link</2>!  espero que el resto bien"
 	}
 }
